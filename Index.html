@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "utf-8"
+<meta name="viewport" content="width=divice-width, initial-scale= 1.0">
+<link rel="stylesheet" href="blueberry.css">
+<style type="text/css">
+*{
+	margin:0;
+	border: 0;
+	padding: 0;
+}
+body {
+	font: 14px/20px Arial, San-Serif;
+	color: #555;
+	margin: 0;
+	background: url(http://i1313.photobucket.com/albums/t558/fakkunetwork/Background_zpsatythmse.jpg) no-repeat center center fixed; 
+	webkit-background-size: cover;
+ 	moz-background-size: cover;
+	o-background-size: cover;
+	background-size: cover;
+}
+h1{
+	text-align: center;
+	font: Charcoal;
+	font-size: 200%;
+	line-height: 140%;
+	padding: 5% 0;
+}
+h2{
+	text-decoration: underline;
+	line-height: 280%;
+	padding-left: 2%;
+	font: 
+}
+h3{
+	line-height: 110%;
+	padding: 5% 0;
+}
+p{
+	padding: 1%;
+}
+img{
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+a{
+	color: #5D535E;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: cell;
+}
+a:hover{
+	color: #f380d4;
+	text-decoration: underline;
+	transition: all 0.3s linear;
+}
+header{
+	background: #FFFFFF;
+	box-shadow: 3px 3px 3px 2px;
+	width: 100%;
+	height: 85px;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.90;
+}
+#logo {	
+	margin: 4px;
+	float: left;
+	width: 300px;
+	height: 80px;
+	background: url(http://i1313.photobucket.com/albums/t558/fakkunetwork/EasySitterLogo_zpss3m6rdgh.png) no-repeat center;
+}
+nav{
+	float:right;
+	padding: 35px 20px 20px 0;
+}
+#menu-icon{
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: url(http://i1313.photobucket.com/albums/t558/fakkunetwork/icon_zpsxpv30dtm.png) no-repeat center;
+}
+a:hover#menu-icon {
+	border-radius: 4px 4px 0 0;
+}
+ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	font: 25px cursive;
+	font-weight: 600;
+	font-size: 160%;
+}
+.current{
+	color: #FFF
+	text-decoration: underline;
+}
+#doc {
+	margin: 40px 0;
+}
+#content{
+	margin: 0 auto;
+	max-width: 1460px;
+	z-index: 0;
+	margin-top: 85px;
+}
+.blueberry{	
+	z-index: 0;
+	max-width: 1460px;
+	margin-top: 85px;
+}
+section{
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+.clear{
+	clear: both;
+}
+.MoreInfo{
+	clear: both;
+}
+.form{
+	float:center;
+	clear: both;
+}
+.picture{
+	text-align: center;
+	max-width: 1340 px;
+	width: 100%;
+	float: center;
+	clear: both;
+	opacity: 0.90;
+}
+
+article img{
+  box-shadow: 5px 6px 10px 2px;
+}
+article{
+	float: left;
+	width: 50%;
+	height: auto;
+	padding: 4%;
+}
+aside{
+  box-shadow: 1px 1px 1px 1px;
+  margin-right: 10px;
+	float: right;
+	width: 35%;
+	height: auto;
+	padding: 3%;
+}
+ul.Ad li{
+	padding-left: 3%;
+  font-size: 25px;
+  font-weight: 10;
+  padding-bottom: 10px;
+}
+div.start h2{
+  font-size: 25px;
+}
+
+footer{
+	background: #333333;
+	width: 100%;
+	overflow: hidden;
+	opacity: 0.90;
+}
+footer p , footer h3{
+	color: #FFF;
+}
+footer p a{
+	color: #FFF;
+	text-decoration: none;
+}
+ul.social li{
+	display: inline;
+}
+ul.social li img{
+	height: 50px;
+}
+footer.second{
+	border-top: 1px solid #4D4E50;
+	background-color: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+#horizontal-scroll {
+width: 200px;
+height: 200px;
+background: url(bg-repeat.png) repeat-y;
+-webkit-animation: backgroundScroll 20s linear infinite;
+animation: backgroundScroll 20s linear infinite;
+}
+ 
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+ 
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+@media screen and (max-width: 478px){
+	body{
+	position: absolute;
+}
+}
+@media screen and (max-width: 1030px){
+	header{
+		position: absolute;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav ul, nav:active ul{
+		position: absolute;
+		padding: 10px;
+		background: url(http://i1313.photobucket.com/albums/t558/fakkunetwork/BGforMenu_zpsmepj6npq.jpg) no-repeat center;
+		box-shadow: 2px 2px 2px 2px;
+		right: 10px;
+		top: 60px;
+		width: 50%;
+		border-radius: 2px 0 2px 2px;
+	}
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	article{
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      table {
+        font-size: 12px;
+      }
+      #map {
+        width: 50%;
+        height: 80%;
+        margin-left: 30px;
+        box-shadow: 3px 4px 5px 5px;
+      }
+      #listing {
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        left: 442px;
+        top: 0px;
+        cursor: pointer;
+        overflow-x: hidden;
+      }
+      #findhotels {
+        font: Charcoal;
+        color: #bfbfbf;
+        font-size: 30px;
+        text-align: right;
+        width: 60%;
+        height: 60px;
+        z-index: 5;
+        background-color: transparent;
+        opacity: 0.9;
+        
+      }
+      
+      #controls {
+        margin-left: 700px;
+        width: 100px;
+        height: 40px;
+        top: 0px;
+        z-index: 5;
+        background-color: transparent;
+      }
+      #autocomplete {
+        margin-top: 14px;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 30px;
+        width: 180px;
+        height: 26px;
+        z-index:6;
+        border: solid;
+      }
+      #country {
+        margin-left: 3px;
+        width: 200px;
+        height: 100px;
+        opacity: 0;
+      }
+      .placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+      }
+      .hotelIcon {
+        width: 24px;
+        height: 24px;
+      }
+      #resultsTable {
+        width: 0px;
+        opacity: 0;
+      }
+      #rating {
+        font-size: 13px;
+        font-family: Arial Unicode MS;
+      }
+
+      .iw_table_row {
+        height: 18px;
+      }
+      .iw_attribute_name {
+        font-weight: bold;
+        text-align: right;
+      }
+      .iw_table_icon {
+        text-align: right;
+      }
+@import "compass/css3";
+
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+  background:$body-bg;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:$main;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+
+.form {
+  background:rgba($form-bg,.9);
+  padding: 10px;
+  max-width:600px;
+  margin:10px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
+}
+
+.tab-content > div:last-child {
+  display:none;
+}
+
+
+h1 {
+  text-align:center;
+  color:$white;
+  font-weight:$thin;
+  margin:0 0 30px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:$white;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:$main;
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$main;
+  color:white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+</style>
+
+
+
+</head>
+<body>
+	<header>
+		<a id="logo"></a>
+		<nav>
+			<a href ="#" id="menu-icon"></a>
+			<ul>
+				<li><a id="howItWorks">How It Works</a></li>
+				<li><a id="gettingStarted">Getting Started</a></li>
+				<li><a id="track">Track a BabySitter</a></li>
+				<li><a href="#">Log In</a></li>
+				<li><a id="register">Register</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="doc">
+		<div id="content">
+			<div class="blueberry">
+				<ul class="slides">
+					<li><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/pic1_zps9wmciaew.jpg" /></li>
+					<li><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/pic2_zpszwzrbvse.png"/></li>
+					<li><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/pic3_zps2ymxobju.jpg"/></li>
+					<li><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/pic4_zpsgjjqwjnj.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="worksFolder"></div>
+	<ul class="work">
+	<section>
+		<img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/check_zpsr5skjhlm.png" />
+		<h1> <b> Hassle Free and Instant! </b> </h1>
+		<p> <b> The Uber of Babysitting! Match with Babysitters on the go! </b>  </p>
+	</section>
+	<section>
+		<img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/location_zpso2imxzmt.png" />
+		<h1> <b> Local Babysitters </b> </h1>
+		<p> <b> All sitters are matched with you through our continously updated GPS tracking system! </b> </p>
+	</section>
+	<section>
+		<img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/trainers_zpscdqzfwdq.png" />
+		<h1> <b> 100% Safe! </b> </h1>
+		<p> <b> We thorougly background check each sitter. You may also schedule an interview at your own convenience! </b> </p>
+	</section>
+	</ul>	
+     <div class = "picture">
+    <img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/stripe_zpspkxayv1q.png">
+  </div>
+
+  </div>
+  <aside>
+  <div class="start">
+      <img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/GettingStarted_zps720arn81.png">
+    <!--h2> Interested in becoming an EasySitter? </h2></div>
+    <ul class="Ad"> 
+      <li><h3> -Must be older than 16. <br> -10 Credits/Hour! (1 Credit: 1 USD) <br> -You build your own schedule! </h3></li>
+    </ul-->
+  </aside>
+  </div> 
+  
+  
+	
+  
+    <div id="controls">
+      <select id="country">
+        <option value="all">All</option>
+        <option value="au">Australia</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="mx">Mexico</option>
+        <option value="nz">New Zealand</option>
+        <option value="it">Italy</option>
+        <option value="za">South Africa</option>
+        <option value="es">Spain</option>
+        <option value="pt">Portugal</option>
+        <option value="us" selected>U.S.A.</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+    </div>
+  <div class="gps"></div>
+  <ul class="Track"></ul>
+    <div id="map"></div>
+    <div id="findhotels">
+      <input id="autocomplete" placeholder="Enter your city" type="text" /></div>
+    <div id="listing1">
+      <table id="resultsTable1">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+        <script>
+// This example uses the autocomplete feature of the Google Places API.
+// It allows the user to find all hotels in a given place, within a given
+// country. It then displays markers for all the hotels returned,
+// with on-click details for each hotel.
+var map, places, infoWindow;
+var markers = [];
+var autocomplete;
+var countryRestrict = {'country': 'us'};
+var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
+var hostnameRegexp = new RegExp('^https?://.+?/');
+
+var countries = {
+  'au': {
+    center: {lat: -25.3, lng: 133.8},
+    zoom: 5
+  },
+  'br': {
+    center: {lat: -14.2, lng: -51.9},
+    zoom: 4
+  },
+  'ca': {
+    center: {lat: 62, lng: -110.0},
+    zoom: 4
+  },
+  'fr': {
+    center: {lat: 46.2, lng: 2.2},
+    zoom: 6
+  },
+  'de': {
+    center: {lat: 51.2, lng: 10.4},
+    zoom: 6
+  },
+  'mx': {
+    center: {lat: 23.6, lng: -102.5},
+    zoom: 5
+  },
+  'nz': {
+    center: {lat: -40.9, lng: 174.9},
+    zoom: 6
+  },
+  'it': {
+    center: {lat: 41.9, lng: 12.6},
+    zoom: 6
+  },
+  'za': {
+    center: {lat: -30.6, lng: 22.9},
+    zoom: 4
+  },
+  'es': {
+    center: {lat: 40.5, lng: -3.7},
+    zoom: 6
+  },
+  'pt': {
+    center: {lat: 39.4, lng: -8.2},
+    zoom: 7
+  },
+  'us': {
+    center: {lat: 37.1, lng: -95.7},
+    zoom: 4
+  },
+  'uk': {
+    center: {lat: 54.8, lng: -4.6},
+    zoom: 6
+  }
+};
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: countries['us'].zoom,
+    center: countries['us'].center,
+    mapTypeControl: false,
+    panControl: false,
+    zoomControl: false,
+    streetViewControl: false
+  });
+
+  infoWindow = new google.maps.InfoWindow({
+    content: document.getElementById('info-content')
+  });
+
+  // Create the autocomplete object and associate it with the UI input control.
+  // Restrict the search to the default country, and to place type "cities".
+  autocomplete = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */ (
+          document.getElementById('autocomplete')), {
+        types: ['(cities)'],
+        componentRestrictions: countryRestrict
+      });
+  places = new google.maps.places.PlacesService(map);
+
+  autocomplete.addListener('place_changed', onPlaceChanged);
+
+  // Add a DOM event listener to react when the user selects a country.
+  document.getElementById('country').addEventListener(
+      'change', setAutocompleteCountry);
+}
+
+// When the user selects a city, get the place details for the city and
+// zoom the map in on the city.
+function onPlaceChanged() {
+  var place = autocomplete.getPlace();
+  if (place.geometry) {
+    map.panTo(place.geometry.location);
+    map.setZoom(15);
+    search();
+  } else {
+    document.getElementById('autocomplete').placeholder = 'Enter a city';
+  }
+}
+
+// Search for hotels in the selected city, within the viewport of the map.
+function search() {
+  var search = {
+    bounds: map.getBounds(),
+    types: ['lodging']
+  };
+
+  places.nearbySearch(search, function(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      clearResults();
+      clearMarkers();
+      // Create a marker for each hotel found, and
+      // assign a letter of the alphabetic to each marker icon.
+      for (var i = 0; i < results.length; i++) {
+        var markerLetter = String.fromCharCode('A'.charCodeAt(0) + i);
+        var markerIcon = MARKER_PATH + markerLetter + '.png';
+        // Use marker animation to drop the icons incrementally on the map.
+        markers[i] = new google.maps.Marker({
+          position: results[i].geometry.location,
+          animation: google.maps.Animation.DROP,
+          icon: markerIcon
+        });
+        // If the user clicks a hotel marker, show the details of that hotel
+        // in an info window.
+        markers[i].placeResult = results[i];
+        /*google.maps.event.addListener(markers[i], 'click', showInfoWindow);*/
+        setTimeout(dropMarker(i), i * 100);
+        addResult(results[i], i);
+      }
+    }
+  });
+}
+
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    if (markers[i]) {
+      markers[i].setMap(null);
+    }
+  }
+  markers = [];
+}
+
+// [START region_setcountry]
+// Set the country restriction based on user input.
+// Also center and zoom the map on the given country.
+function setAutocompleteCountry() {
+  var country = document.getElementById('country').value;
+  if (country == 'all') {
+    autocomplete.setComponentRestrictions([]);
+    map.setCenter({lat: 15, lng: 0});
+    map.setZoom(2);
+  } else {
+    autocomplete.setComponentRestrictions({'country': country});
+    map.setCenter(countries[country].center);
+    map.setZoom(countries[country].zoom);
+  }
+  clearResults();
+  clearMarkers();
+}
+// [END region_setcountry]
+
+function dropMarker(i) {
+  return function() {
+    markers[i].setMap(map);
+  };
+}
+
+function addResult(result, i) {
+  var results = document.getElementById('results');
+  var markerLetter = String.fromCharCode('A'.charCodeAt(0) + i);
+  var markerIcon = MARKER_PATH + markerLetter + '.png';
+
+  var tr = document.createElement('tr');
+ // tr.style.backgroundColor = (i % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
+  tr.onclick = function() {
+    google.maps.event.trigger(markers[i], 'click');
+  };
+
+  var iconTd = document.createElement('td');
+  var nameTd = document.createElement('td');
+  var icon = document.createElement('img');
+  icon.src = markerIcon;
+  icon.setAttribute('class', 'placeIcon');
+  icon.setAttribute('className', 'placeIcon');
+  /*var name = document.createTextNode(result.name);
+  iconTd.appendChild(icon);
+  nameTd.appendChild(name);
+  tr.appendChild(iconTd);
+  tr.appendChild(nameTd);
+  results.appendChild(tr);*/
+}
+
+function clearResults() {
+  var results = document.getElementById('results');
+  while (results.childNodes[0]) {
+    results.removeChild(results.childNodes[0]);
+  }
+}
+
+// Get the place details for a hotel. Show the information in an info window,
+// anchored on the marker for the hotel that the user selected.
+function showInfoWindow() {
+  var marker = this;
+  places.getDetails({placeId: marker.placeResult.place_id},
+      function(place, status) {
+        if (status !== google.maps.places.PlacesServiceStatus.OK) {
+          return;
+        }
+        infoWindow.open(map, marker);
+        buildIWContent(place);
+      });
+}
+
+// Load the place information into the HTML elements used by the info window.
+function buildIWContent(place) {
+  document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
+      'src="' + place.icon + '"/>';
+  document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
+      '">' + place.name + '</a></b>';
+  document.getElementById('iw-address').textContent = place.vicinity;
+
+  if (place.formatted_phone_number) {
+    document.getElementById('iw-phone-row').style.display = '';
+    document.getElementById('iw-phone').textContent =
+        place.formatted_phone_number;
+  } else {
+    document.getElementById('iw-phone-row').style.display = 'none';
+  }
+
+  // Assign a five-star rating to the hotel, using a black star ('&#10029;')
+  // to indicate the rating the hotel has earned, and a white star ('&#10025;')
+  // for the rating points not achieved.
+  if (place.rating) {
+    var ratingHtml = '';
+    for (var i = 0; i < 5; i++) {
+      if (place.rating < (i + 0.5)) {
+        ratingHtml += '&#10025;';
+      } else {
+        ratingHtml += '&#10029;';
+      }
+    document.getElementById('iw-rating-row').style.display = '';
+    document.getElementById('iw-rating').innerHTML = ratingHtml;
+    }
+  } else {
+    document.getElementById('iw-rating-row').style.display = 'none';
+  }
+
+  // The regexp isolates the first part of the URL (domain plus subdomain)
+  // to give a short URL for displaying in the info window.
+  if (place.website) {
+    var fullUrl = place.website;
+    var website = hostnameRegexp.exec(place.website);
+    if (website === null) {
+      website = 'http://' + place.website + '/';
+      fullUrl = website;
+    }
+    document.getElementById('iw-website-row').style.display = '';
+    document.getElementById('iw-website').textContent = website;
+  } else {
+    document.getElementById('iw-website-row').style.display = 'none';
+  }
+}
+    </script>
+ 
+	<div class="form">
+      <div class="tab-content">
+        <div id="signup">
+          <h1>Join for Free Today!</h1>
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Started</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div></div>
+	<div class="moreInfo"></div>
+  <ul class="info">
+  <section>
+    <h1> Low Income? </h1>
+    <a target= "blank" href="http://www.pathwaysla.org/en/parent-resources/get-help-paying"><img src="http://www.pathwaysla.org/inv/images/homepage/Pathways_Hollywood.png" /> </a>
+  </section>
+  <section>
+    <h1> You May Qualify!! </h1>
+    <a target = "blank" href="http://www.ladpss.org/dpss/calworks/childcare.cfm"><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/CalWorks_zpsrmt4t67c.png" /> </a>
+    <a target = "blank" href="http://www.chs-ca.org/child-care/ccpp/"> <img src = "http://www.chs-ca.org/_images/logo.png" /> </a>
+  </section>
+  <section>
+    <h1> Government Subsidized Programs </h1>
+    <a target = "blank" href="http://prekkid.org/"><img src="http://prekkid.org/wp-content/themes/lacoe/images/head-start-logo.png" /> </a>
+  </section>
+  </ul>
+	<footer>
+		<section>
+			<h3><b>EasySitter Inc.</b></h3>
+			<p><b>714-722-4294</b><br><br>
+			13637 Abana Dr <br>
+			Cerritos, CA 90703 <br>
+			dannycho7@gmail.com </p>
+		</section>
+		<section> 
+			<h3>Connect With Us!</h3>
+			<ul class="social">
+			<li><a href="https://www.facebook.com/dannychooo"><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/facebook1_zpsyywnirer.png"></a></li>
+			<li><a href="#"><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/googleplus_zpsmczbcedr.png"></a></li>
+			<li><a href="#"><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/twitter1_zpslwdic0aq.png"></a></li>
+			<li><a href="#"><img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/youtube1_zpstjcgzfun.png"></a></li>
+			</ul>
+		</section>
+		<section>
+		<img src="http://i1313.photobucket.com/albums/t558/fakkunetwork/EasySitterLogo_zpss3m6rdgh.png"> 
+		</section>
+	</footer>
+	<footer class = "second">
+		<p>This is Danny Cho's submission for WeHack2016</p>
+	</footer>
+</body>
+</html>	
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script src="Website.js"> </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDjHcJEXl-qaFeklifRC99ZyO4UJwhti4&signed_in=true&libraries=places&callback=initMap"
+        async defer></script>
+<script>
+	$(window).load(function(){
+		$('.blueberry').blueberry();
+	});
+
+</script>
